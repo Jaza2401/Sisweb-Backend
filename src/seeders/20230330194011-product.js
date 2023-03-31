@@ -1,9 +1,9 @@
 'use strict';
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-async up (queryInterface, Sequelize) {
-await queryInterface.bulkInsert('Products', [
-{
+    async up (queryInterface, Sequelize) {
+    await queryInterface.bulkInsert('Products', [
+    {
 name: 'Sephora Skin Care',
 prod_type:'beauty',
 price:'78',
@@ -41,7 +41,7 @@ updatedAt: new Date()
 },
 ], {})
 },
-async down (queryInterface, Sequelize) {
-await queryInterface.bulkDelete('Products', null, {});
-}
+    async down (queryInterface, Sequelize) {
+        await queryInterface.bulkDelete('Products', null, {});
+    }
 };
