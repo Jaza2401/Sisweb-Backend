@@ -9,6 +9,7 @@ class Product extends Model {
 */
 static associate(models) {
 // define association here
+    Product.belongsToMany(models.order, { through: 'OrderProducts' });
 }
 }
 Product.init(
