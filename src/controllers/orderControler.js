@@ -1,5 +1,5 @@
 import Model from "../models";
-import Order from "../models/Order";
+import Order from "../models/order";
 const { order } = Model;
 
 // Create and Save a new Product
